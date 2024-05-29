@@ -222,13 +222,14 @@ class _RestaurantDetailPageState extends State<RestaurantDetailPage> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ReviewRestaurantPage(
-                                    restaurantId: _restaurant.id,
-                                    customerReviews:
-                                        _restaurant.customerReviews,
-                                  )));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ReviewRestaurantPage(
+                            restaurantId: _restaurant.id,
+                            customerReviews: _restaurant.customerReviews,
+                          ),
+                        ),
+                      );
                     },
                     child:
                         const Text('Reviews', style: TextStyle(fontSize: 16)),

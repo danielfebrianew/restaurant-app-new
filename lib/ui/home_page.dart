@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:resto_app_new/common/styles.dart';
+import 'package:resto_app_new/ui/convertion_page.dart';
 import 'package:resto_app_new/ui/profile_page.dart';
 import 'package:resto_app_new/ui/resto/restaurant_list_page.dart';
+import 'package:resto_app_new/ui/time_page.dart';
 
 class HomePage extends StatefulWidget {
   static const routeName = '/home_page';
@@ -25,6 +27,14 @@ class _HomePageState extends State<HomePage> {
       icon: Icon(Icons.person),
       label: 'Profile',
     ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.access_time),
+      label: 'Waktu',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.swap_horiz_outlined),
+      label: 'Pertukaran',
+    ),
   ];
 
   void _onBottomNavTapped(int index) {
@@ -36,6 +46,8 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _listWidget = [
     const RestaurantListPage(),
     const ProfilePage(),
+    const TimeConversionPage(),
+    const CurrencyConversionPage(),
   ];
 
   @override

@@ -4,6 +4,7 @@ import 'package:resto_app_new/data/enum/fetch_state.dart';
 import 'package:resto_app_new/widget/card_restaurant.dart';
 import 'package:resto_app_new/widget/text_image.dart';
 import 'package:anim_search_bar/anim_search_bar.dart';
+import 'package:resto_app_new/common/styles.dart';
 
 import '../../data/model/restaurant.dart';
 

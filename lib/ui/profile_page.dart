@@ -60,7 +60,15 @@ class _ProfilePageState extends State<ProfilePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 300),
+            const SizedBox(height: 15),
+            const Text(
+              'Kesan dan Pesan : Saya suka pemrograman mobile. Ini adalah passion saya sejak masih kecil!',
+              style: TextStyle(
+                fontSize: 20,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 200),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
